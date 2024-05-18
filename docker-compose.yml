@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "4567:4567"
+    environment:
+      - RACK_ENV=development

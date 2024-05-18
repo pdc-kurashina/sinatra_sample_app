@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Show Data</title>
+  </head>
+  <body>
+    <h1>Submitted Data</h1>
+    <p>Name: <%= name %></p>
+    <p>Age: <%= age %></p>
+
+    <button id="indexButton">index</button>
+    <button id="formButton">form</button>
+  </body>
+</html>
+
+<script>
+  document.getElementById('indexButton').onclick = function() {
+    window.location.href = '/index';
+  };
+
+  document.getElementById('formButton').onclick = function() {
+    window.location.href = '/form';
+  };
+</script>
